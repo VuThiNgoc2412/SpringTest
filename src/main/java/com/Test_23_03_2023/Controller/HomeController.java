@@ -1,4 +1,4 @@
-package com.Test_23_03_2023.Test.controller;
+package com.Test_23_03_2023.Controller;
 
 import java.io.IOException;
 

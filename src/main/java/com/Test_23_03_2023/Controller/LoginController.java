@@ -1,4 +1,4 @@
-package com.Test_23_03_2023.Test.controller;
+package com.Test_23_03_2023.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -9,13 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.Test.Service.LoginService;
+import com.Test_23_03_2023.Service.LoginService;
 
 @Controller
 public class LoginController {
-	@Autowired (required = false)
-//	public LoginDaoImpl loginDao = new LoginDaoImpl();
-	public LoginService ls =new LoginService();
+	@Autowired
+	LoginService ls;
 	
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
